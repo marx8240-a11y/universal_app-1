@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version.local
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Environment variables (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Test / lint / type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.coverage
+htmlcov/
+coverage.xml
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tooling state (opencode session data)
+.opencode/
