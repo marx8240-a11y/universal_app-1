@@ -20,7 +20,7 @@ def create_access_token(subject: str )-> str :
 def check_access_token(token :str):
     try:
         payload = jwt.decode(
-            token , settings.SECRET_KEY , algorithm=settings.ALGORITHM
+            token , settings.SECRET_KEY , algorithms=[settings.ALGORITHM]
         )
         return payload.get("sub")
     except jwt.PyJWTError:
