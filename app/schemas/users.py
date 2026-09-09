@@ -12,3 +12,11 @@ class UserCreate(SQLModel):
     password :str =Field(min_length=6 , max_length=50)
 
 
+class UserLogin(SQLModel):
+    username :str
+    password :str
+
+
+class Token(SQLModel):
+    access_token :str
+    token_type :str = "bearer"
